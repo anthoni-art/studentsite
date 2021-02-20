@@ -14,6 +14,8 @@ body {
     line-height: 1.4;
 }
 
+/* SITE STRUCTURE */    
+
 /* HEADER */
 
 header {
@@ -22,6 +24,7 @@ header {
     padding: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 header a {
@@ -50,20 +53,14 @@ header a:hover {
 .site-nav a {
     display: block;
     padding: 1em;
-    justify-content: flex-end;
 }
 
 /* MAIN */
 main {
     background: rgba(0,0,0,.05);
-    text-align: center; 
 }
 
 /* HERO SECTION */
-.hero {
-    background-color: rgba(0, 102,204, 1);
-}
-
 .hero {
     background-color: rgba(0,102,204, 1);
     text-align: center;
@@ -80,12 +77,7 @@ main {
 
 .hero p {
     max-width: 30cm;
-    margin: 0 auto
-}
-
-.hero p {
-    max-width: 30cm;
-    margin: 1em auto;
+    margin: 1em auto
 }
 
 /* COURSES SECTION */
@@ -106,15 +98,23 @@ main {
 }
 
 /* FOOTER */
-footer { 
-    border-top: 1px solid rgba(0,0,0,.05);
-    padding: 1em;
-}
-
-/* FOOTER */
 footer {
     border-top: 1px solid rgba(0,0,0,.05);
     padding: 1em
+}
+
+/*LAYOUT */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.two-col-sidebar {
+    display: grid;
+}
+
+aside {
+    
 }
 
 /* SOCIAL NAV*/
@@ -139,7 +139,14 @@ footer {
 
 /* COURSE WORK SECTION */
 .coursework {
-    padding: 6em 1em;
+    padding: 3em 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projects {
+    margin: 4em 2em; 
 }
 /* FOR DEV PURPOSES */
 /* body * {
