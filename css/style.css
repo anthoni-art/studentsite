@@ -88,15 +88,9 @@ main {
     margin: 1em auto;
 }
 
-/* SUB PAGES */
-.page-sub .hero {
-    background-color:rgba(0, 0, 0, 0.1);
-    color: rgba(0, 0, 0, 0.8);
-}
-
 /* COURSES SECTION */
 .course {
-    padding: 6wm 1em;
+    padding: 6em 1em;
     display: grid;
     justify-content: center
 }
@@ -137,6 +131,16 @@ footer {
     padding: 1em;
 }
 
+/* STYLING FOR SUB PAGES */
+.page-sub .hero {
+    background-color:rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* COURSE WORK SECTION */
+.coursework {
+    padding: 6em 1em;
+}
 /* FOR DEV PURPOSES */
 /* body * {
     background-color: rgba(0,0,0,.05) !important;
