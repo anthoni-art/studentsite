@@ -30,6 +30,7 @@ header {
 header a {
     color: rgba(255,255,255, 0.8);
     text-decoration: none;
+
 }
 
 header a:hover {
@@ -141,14 +142,19 @@ aside {
         border-right: 1px solid rgba(0, 0, 0, 0.1);
         margin: 0 3em 2em 0;
         padding: .3em 2em 0 0;
-    }
-    
+    }   
 }
 
-/* STYLING FOR SUB PAGES */
+/* CUSTOM STYLING FOR SPECIFIC & SUB PAGES */
 .page-sub .hero {
-    background-color:rgba(0, 0, 0, 0.1);
-    color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0,0,0,.1);
+    color: rgba(0,0,0,.8);
+}
+
+.page-home .hero{
+    background-image: url('../img/liam-shaw-20bw0Ti07ZU-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 /* COURSE PAGES WITH MULTIPLE PROJECT LISTS */
