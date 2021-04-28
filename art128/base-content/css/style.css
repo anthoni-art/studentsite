@@ -28,11 +28,19 @@
             #TOGGLE-NAV (Default for Small Screens)
 --------------------------------- */
 
-
 /*TYPOOGRAPHY*/
-
+/* Reference
+        62.5%  => 10px
+	    68.8%  => 11px
+	    75%    => 12px
+	    81.3%  => 13px
+	    87.5%  => 14px
+	    100%   => 16px
+	    112.5% => 18px
+        125%   => 20px
+*/
 body {
-    font-size: 87.5%; /* 16px = 1em */
+    font-size: 87.5%; /* 14px */
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.5;
     color: rgba(0, 0, 0, .8);
@@ -43,6 +51,10 @@ body {
     Based on a Traditional Typographic Scale
     48, 36, 24, 21, 18, 16
 */
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0.5em 0;
+}
 
 h1 {
     font-size: 3em; /* 48px */
@@ -76,6 +88,70 @@ h6 {
 
 /* PARAGRAPHS */
 p {
-line-height: 1.4;
-max-width: 38em;
+    margin: 0.5em 0;
+    max-width: 38em;
+    line-height: 1.4;
+}
+
+/* LINKS */
+a {
+    color: rgba(0, 0, 153, .8);
+    text-decoration: none;
+}
+a:hover {
+    color: rgba(0, 0, 153, 1);
+    text-decoration: underline;
+}
+
+/* HELPER CLASSES */
+.text-centered {
+    text-align: center;
+}
+.full-width {
+    max-width: none;
+    width: 100%;
+}
+.horiz-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* IMAGES */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* BUTTONS */
+.button,
+button {
+    font-size: inherit;
+    line-height: 1;
+    background-color:rgba(0, 0, 255, 1);
+    border: 1px solid rgba(0, 0, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 1em;
+    display: inline-block;
+    margin: 0.5em; 
+    text-align: center;
+    border-radius: .5em;
+    
+}
+
+.button:hover,
+button:hover {
+    background-color: rgba(0, 0, 153, 1);
+    border-color: rgba(0, 0, 153, 1);
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+.button.alt {
+    background-color: transparent;
+    color: rgba(0, 0, 153, 1);
+}
+
+.button.alt:hover {
+    background-color: rgba(0, 0, 153, 1);
+    color: rgba(255, 255, 255, 1);
 }
