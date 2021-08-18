@@ -147,7 +147,8 @@ img {
 
 /* BUTTONS */
 .button,
-button {
+button,
+form input[type=submit] {
     font-size: inherit;
     line-height: 1;
     background-color:rgba(0, 0, 255, 1);
@@ -155,14 +156,15 @@ button {
     color: rgba(255, 255, 255, 1);
     padding: 1em;
     display: inline-block;
-    margin: .5em .5em .5em .5em; 
+    margin: .5em .5em .5em 0; 
     text-align: center;
     border-radius: .5em;
     
 }
 
 .button:hover,
-button:hover {
+button:hover,
+form input[type=submit]:hover {
     background-color: rgba(0, 0, 153, 1);
     border-color: rgba(0, 0, 153, 1);
     color: rgba(255, 255, 255, 1);
@@ -364,7 +366,7 @@ section {
 /* HERO */
 
 .hero {
-    padding: 7em 4%;
+    padding: 6em 4%;
     background-color: rgba(0,0,0,.1);
     text-align: center;
 }
@@ -511,4 +513,43 @@ blockquote {
     margin-block-end: 1em;
     margin-inline-start: 40px;
     margin-inline-end: 40px;
+}
+
+/* FORMS */
+
+form {
+    max-width: 600px;
+    margin: 2em auto;
+}
+
+form label,
+form input,
+form textarea {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+}
+
+form label {
+    margin-top: 1em; 
+    margin-bottom: 0.25em;
+}
+
+form input[type="text"],
+form textarea {
+    border-color: 1px solid #ccc;
+    padding: 0.5em;
+    font-size: 1em;
+    color: #666
+}
+
+form textarea {
+    min-height: 10em;
+}
+
+form input[type=submit] {
+    margin-top: 1.5em;
+    width: auto;
 }
