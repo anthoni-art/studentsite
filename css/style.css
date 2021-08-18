@@ -19,7 +19,7 @@ body {
 /* HEADER */
 
 header {
-    background-color: rgb(0, 153, 145);
+    background-color: rgb(25, 189, 181);
     color: rgba(0, 0, 0, 0.8);
     padding: 1em;
     display: grid;
@@ -71,12 +71,14 @@ main {
 
 .hero h2 {
     font-size: 6em;
+    color: azure;
     line-height: 1;
     text-transform: uppercase;
     margin: 0 auto;
 }
 
 .hero p {
+    color: azure;
     max-width: 30cm;
     margin: 1em auto
 }
@@ -147,6 +149,9 @@ aside {
 
 /* CUSTOM STYLING FOR SPECIFIC & SUB PAGES */
 .page-sub .hero {
+    background-image: url('../img/andra-c-taylor-jr-IC8zpKz6qF0-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
     background-color: rgba(0,0,0,.1);
     color: rgba(0,0,0,.8);
 }
