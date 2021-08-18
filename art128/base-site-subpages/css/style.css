@@ -314,6 +314,7 @@ body.demo::before {
     .site-header .container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 }
 /* STYLING FOR BOTH HEADER AND FOOTER */
@@ -368,7 +369,7 @@ section {
     text-align: center;
 }
 .hero h1, p {
-    max-width: 500px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -421,7 +422,7 @@ section {
     .toggle-nav .site-nav .menu-button.navicon::after {
         content: "\2630";
         display: inline-block;
-        padding: 0 .4em;
+        padding: .2em 0;
         margin: 0;
         color: rgba(0,0,0,.8);
         font-size: 1.5em;
@@ -434,21 +435,80 @@ section {
 
 }
 
-/* SUB PAGES */
+/* ARTICLES */
 
 article {
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 8em auto;
+    padding: 2em 0;
 }
 
-article h1, h2.subhead {
+article h1 {
     text-align: center;
+}
+
+article h1 + .subhead,
+article .date {
+    text-align: center;
+    margin: 1em;
 }
 
 article h2.subhead {
     font-weight: normal;
-    font-size: 1.5em;
-    line-height: 1.2;
-    opacity: .7;
+    font-size: 1.25em;
+    line-height: 1.5;
+    opacity: .8;
+}
+
+article .date {
+    text-align: center;
+    font-size: 0.625em;
+    line-height: 0.625em;
+    color: #999;
+    font-weight: normal;
+}
+
+article .date + p {
+    margin-top: 2em;
+}
+
+article p + h1,
+article p + h2,
+article p + h3,
+article p + h4,
+article p + h5,
+article p + h6 {
+    margin-top: 1.5em;
+}
+
+article p:first-of-type::first-letter {
+    font-size: 3em;
+    line-height: 1em;
+    background: #000;
+    color: #fff;
+    padding: .2em .4em;
+    margin-right: .3em;
+    margin-bottom: .1em;
+    float: left;
+}
+.site-id h1 {
+    color: #999;
+    font-weight: normal;
+}
+
+.site-id h1 a {
+    font-weight: bold;
+}
+
+blockquote {
+    font-size: 1.142em;
+    margin: 1.5em 0;
+    padding: 1.5em;
+    border-top: 0px solid #ccc;
+    border-bottom: 0px solid #ccc;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
 }
