@@ -395,7 +395,7 @@ section {
         color: rgba(255, 255, 255, 0);
         padding: 0;
     }
-    .toggle-nav .site-nav .menu-button.navicon:after {
+    .toggle-nav .site-nav .menu-button.navicon::after {
         content: "\2630";
         display: inline-block;
         padding: 0 .4em;
@@ -405,7 +405,7 @@ section {
 
     }
 
-    .toggle-nav[data-navstate="open"] .site-nav .menu-button.navicon:after {
+    .toggle-nav[data-navstate="open"] .site-nav .menu-button.navicon::after {
         content: "\2715";
     }
 

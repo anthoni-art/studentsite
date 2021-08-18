@@ -6,6 +6,7 @@
             #HEADINGS
             #PARAGRAPHS
             #LINKS
+            #ARTICLE
             #HELPERS
         #MEDIA
             #IMAGES
@@ -114,6 +115,28 @@ a:hover {
 .horiz-center {
     margin-left: auto;
     margin-right: auto;
+}
+
+.hidden {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+@media (min-width: 768px) {
+    .hidden-desktop {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hidden-mobile {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
 }
 
 /* IMAGES */
@@ -395,7 +418,7 @@ section {
         color: rgba(255, 255, 255, 0);
         padding: 0;
     }
-    .toggle-nav .site-nav .menu-button.navicon:after {
+    .toggle-nav .site-nav .menu-button.navicon::after {
         content: "\2630";
         display: inline-block;
         padding: 0 .4em;
@@ -405,8 +428,27 @@ section {
 
     }
 
-    .toggle-nav[data-navstate="open"] .site-nav .menu-button.navicon:after {
+    .toggle-nav[data-navstate="open"] .site-nav .menu-button.navicon::after {
         content: "\2715";
     }
 
+}
+
+/* SUB PAGES */
+
+article {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article h1, h2.subhead {
+    text-align: center;
+}
+
+article h2.subhead {
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 1.2;
+    opacity: .7;
 }
