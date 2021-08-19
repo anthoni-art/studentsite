@@ -553,3 +553,31 @@ form input[type=submit] {
     margin-top: 1.5em;
     width: auto;
 }
+
+/* CUSTOM SITE CSS */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width:100px;
+    margin: 0.5em auto;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+.site-header.sticky {
+    position: fixed;
+    width: 100%;
+}
+
+#about {
+    background: rgba(0, 0, 0, 0.05)
+}
+
+#contact {
+    background: rgba(0, 0, 0, 0.1)
+}
