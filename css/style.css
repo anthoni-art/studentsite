@@ -71,14 +71,14 @@ main {
 
 .hero h2 {
     font-size: 4em;
-    color: azure;
+    color: rgb(255, 255, 255, 1);
     line-height: 1;
     text-transform: uppercase;
     margin: 0 auto;
 }
 
 .hero p {
-    color: azure;
+    color: rgb(255, 255, 255, 1);
     max-width: 30cm;
     margin: 1em auto
 }
