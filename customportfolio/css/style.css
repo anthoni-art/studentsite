@@ -24,7 +24,7 @@ header, section, footer, aside, nav, main, article, figure {
     display: block;
   }
   
-  * {background-color: #CFD3DB}
+  * {background-color: #dfedf0}
 
   /* #TYPOGRAPHY  */
   body {
@@ -38,6 +38,7 @@ header, section, footer, aside, nav, main, article, figure {
   }
   
   h1 {
+      font-family: baskerville-display-pt, serif;
       font-size: 3em;
   }
   
@@ -87,8 +88,11 @@ header, section, footer, aside, nav, main, article, figure {
     height: auto;
   }
   
-  img.circular {
-      border-radius: 100%;
+
+      .circular {
+        max-width: 30em;
+        border-radius: 2em;
+      }
   }
   
   /* BUTTONS */
