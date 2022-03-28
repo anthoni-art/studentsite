@@ -1,0 +1,172 @@
+/* GLOBAL RESETS  */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+html,
+body {
+  /* height: 100%; */
+}
+
+/* GENERAL STYLING */
+
+body {
+  background-color: black;
+  color: rgb(255 255 255 / 0.8);
+}
+
+/* LINKS */
+a {
+  color: rgb(255 255 255 / 1);
+}
+
+/* TYPOGRAPHY */
+body {
+  font-family: "Helvetica", Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1em;
+  font-size: 87.5%;
+  line-height: 1.5em;
+}
+
+.hero h2 {
+  font-family: "Poppins", Helvetica, sans-serif;
+  /* font-family: "baskerville-urw", Georgia, "Times New Roman", Times, serif serif; */
+  font-size: 8em;
+  font-weight: 400;
+  line-height: 1.5em;
+  font-style: normal;
+}
+
+/* LAYOUT */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-header {
+  padding: 1em;
+}
+
+section {
+  padding: 1em;
+}
+
+.site-footer {
+  padding: 1em;
+}
+
+/* SECTIONS & CONTENT */
+marquee {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 3em;
+  line-height: 1.2em;
+  padding: 1.5em 0em;
+}
+
+#featuredwork h3 {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 5em;
+  line-height: 1.2em;
+}
+
+#featuredwork-titles h4 {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+/* TWINKLING STARS & CLOUDS */
+.stars,
+.twinkling,
+.clouds {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.stars {
+  overflow: hidden;
+  z-index: -3;
+  background: #000 url("../img/stars.png") repeat top center;
+  height: 100vh;
+}
+.twinkling {
+  z-index: -2;
+  background: transparent url("../img/twinklingstars.png") repeat top center;
+  height: 100vh;
+  animation: move-twink-back 200s linear infinite;
+}
+.clouds {
+  z-index: -1;
+  background: transparent url("../img/clouds2.png") repeat top center;
+  height: 100vh;
+  animation: move-clouds-back 200s linear infinite;
+}
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+/* 
+Baskerville URW Regular 
+font-family: baskerville-urw, serif;
+font-weight: 400;
+font-style: normal;
+
+Baskerville URW Medium
+font-weight: 500;
+font-style: normal;
+
+Baskerville URW Bold
+font-weight: 700;
+font-style: normal;
+
+Baskerville URW Extra Bold
+font-weight: 800;
+font-style: normal;
+
+Baskerville URW Ultra Bold
+font-weight: 900;
+font-style: normal;
+
+Baskerville URW Regular Italic
+font-weight: 400;
+font-style: italic;
+
+Baskerville URW Medium Oblique
+font-weight: 500;
+font-style: italic;
+
+Baskerville URW Bold Oblique
+font-weight: 700;
+font-style: italic;
+
+Baskerville URW Extra Bold Oblique
+font-weight: 800;
+font-style: italic;
+
+Baskerville URW Ultra Bold Oblique
+font-weight: 900;
+font-style: italic; */
